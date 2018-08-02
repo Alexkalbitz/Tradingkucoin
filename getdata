@@ -1,0 +1,40 @@
+from kucoin.client import Client
+from pprint import pprint
+import datetime
+
+Key = "adasd"
+
+Secret = "adsasdfdf"
+
+
+client = Client(api_key=Key, api_secret=Secret)
+
+
+def get_data():
+    tick = client.get_tick()
+
+
+
+
+
+ticks = client.get_tick()
+
+#pprint (tick)
+#price =[]
+#price=tick["lastDealPrice"]
+
+for n in ticks:
+    print(n['cointype'])
+
+
+pprint(price)
+
+
+
+
+
+
+
+
+
+print

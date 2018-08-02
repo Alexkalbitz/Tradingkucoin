@@ -1,0 +1,38 @@
+
+
+What Data to get
+
+
+Prices
+Order Books - BUY & SELL (What is a SELL What is a BUY????)
+Order Books - (Volume for % Increase/decrease)
+Historical Data (by BUY AND SELL)
+
+
+
+
+
+What to do with the Data
+Price:
+Compare current price with past prices 1h 2h 4h 12h 24h 72h 168h
+Compare current price with Mean Price 1h 2h 4h 12h 24h 72h 168h
+Show Highest/Lowest Price for 1h 2h 4h 12h 24h 72h 168h
+Show % Change for High/Low with current Status
+Show All Time High/Low
+
+
+
+Trade Volume:
+Trade Volume in BTC and/or USD
+Trade Volume 1m Mean for 5m 15m 30m 1h 2h 4h 12h 24h 72h 168h
+Check for Trade Volume Spikes (Alarm)
+Trade Volume BUY/SELL Compare
+Trade Frequency
+
+
+RSI
+
+
+pickle für Files
+
+

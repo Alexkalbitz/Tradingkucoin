@@ -1,0 +1,22 @@
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="font-size:12px;">
+{{price}}
+{{symbol}}
+<table border="2">
+{% for tick in ticks %}
+    <tr>
+    <td>{{tick.symbol}}</td>
+    <td>{{tick.lastDealPrice|floatformat:10|intcomma }}</td>
+    <td>{{tick.moreinfo}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

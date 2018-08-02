@@ -1,0 +1,39 @@
+{% load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="font-size:14px;">
+
+<table border="2">
+    <tr>
+    <td>Markets</td>
+    <td>Last Dealt Price</td>
+    <td>mean 2h</td>
+    <td>mean 6h</td>
+    <td>mean 12h</td>
+    <td>mean 1day</td>
+    <td>mean 3days</td>
+    <td>mean 7days</td>
+    <td>Change Rate</td>
+    <td>Volume Value</td>
+    <td>more info</td>
+    </tr>
+{% for tick in ticks %}
+    <tr>
+    <td>{{tick.symbol}}</td>
+    <td>{{tick.lastDealPrice|floatformat:10|intcomma }}</td>
+    {% for mean in tick.means %}
+        <td>{{mean|floatformat:10|intcomma }}</td>
+    {% endfor %}
+    <td>{{tick.changeRate}}</td>
+    <td>{{tick.volValue}}</td>
+    <td style="background-color:rgb(255, 99, 71)">{{tick.moreinfo}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
